@@ -7,8 +7,8 @@ const FEED_DATA = [
     id: 1,
     shortcode: 'C-2XG3Xl_0w', // Replace with any valid reel shortcode
     trend: 'ASMR Sizzling Food',
-    title: 'POV: Dinner at Spice Garden',
-    desc: 'Record a 7-second high-quality close up of your Tandoori Chicken sizzling on the grill with natural sound. High engagement potential.',
+    title: 'POV: Dinner at Truffles',
+    desc: 'Record a 7-second high-quality close up of your Chicken Steak sizzling on the grill with natural sound. High engagement potential.',
     likes: '12.4K',
     comments: 89,
     impact: 'Estimated +20% local reach'
@@ -17,8 +17,8 @@ const FEED_DATA = [
     id: 2,
     shortcode: 'C9_Mv_aB_wT', // Replace with any valid reel shortcode
     trend: 'Behind The Scenes',
-    title: 'How we make our Biryani',
-    desc: 'Show the layers of your Biryani being assembled. Customers love transparency and authenticity. Use fast cuts.',
+    title: 'How we make our Signature Burger',
+    desc: 'Show the layers of your All American Burger being assembled. Customers love transparency and authenticity. Use fast cuts.',
     likes: '8.1K',
     comments: 42,
     impact: 'Builds trust & cravings'

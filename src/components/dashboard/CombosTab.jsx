@@ -3,10 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Layers, Plus, Zap, RefreshCw, Check } from 'lucide-react'
 import { generateCombos } from '../../services/gemini'
 
-const MENU = ['Chicken Biryani', 'Paneer Tikka', 'Mango Lassi', 'Butter Naan', 'Dal Makhani', 'Gulab Jamun']
+const MENU = ['All American Burger', 'Ferrero Rocher Shake', 'Classic Fries', 'Chicken Steak', 'Mac & Cheese', 'Dutch Truffle Cake']
 
 export default function CombosTab({ pushToast }) {
-  const [selected, setSelected] = useState(['Chicken Biryani', 'Mango Lassi'])
+  const [selected, setSelected] = useState(['All American Burger', 'Ferrero Rocher Shake'])
   const [generating, setGenerating] = useState(false)
   const [aiCombos, setAiCombos] = useState([])
 

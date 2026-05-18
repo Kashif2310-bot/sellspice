@@ -73,21 +73,24 @@ export default function ForecastTab() {
           <h3 className="text-sm font-semibold text-slate-300 uppercase tracking-wide">Prediction Factors</h3>
           
           <div className={`card p-5 border-l-4 ${weather && weather.tomorrowDesc.toLowerCase().includes('rain') ? 'border-l-blue-400' : 'border-l-yellow-400'}`}>
-            <div className="flex gap-3 items-center mb-2 relative">
+            <div className="flex gap-3 items-start relative">
               <div className="absolute top-0 right-0 text-[10px] uppercase text-emerald-400 font-bold bg-emerald-500/10 px-1.5 py-0.5 rounded flex items-center gap-1">
                 {loadingWeather ? <RefreshCw size={10} className="animate-spin" /> : <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse" />} Live
               </div>
-              <div className={`p-2 rounded ${weather && weather.tomorrowDesc.toLowerCase().includes('rain') ? 'bg-blue-500/10 text-blue-400' : 'bg-yellow-500/10 text-yellow-400'}`}>
+              <div className={`p-2 rounded mt-1 ${weather && weather.tomorrowDesc.toLowerCase().includes('rain') ? 'bg-blue-500/10 text-blue-400' : 'bg-yellow-500/10 text-yellow-400'}`}>
                 {weather && weather.tomorrowDesc.toLowerCase().includes('rain') ? <CloudRain size={18} /> : <Sun size={18} />}
               </div>
-              <div>
-                <div className="text-sm font-bold text-white">
-                  Weather: {loadingWeather ? 'Syncing...' : (weather ? `${weather.tomorrowDesc}, ${weather.tomorrowMax}°C` : 'Clear, 42°C')}
-                </div>
+              <div className="flex-1 pr-16 space-y-1">
                 <div className="text-xs text-slate-400">
+                  Current: {loadingWeather ? 'Syncing...' : (weather ? `${weather.currentDesc}, ${weather.currentTemp}°C` : 'Clear, 32°C')}
+                </div>
+                <div className="text-sm font-bold text-white">
+                  Tomorrow: {loadingWeather ? 'Syncing forecast...' : (weather ? `${weather.tomorrowDesc}, ${weather.tomorrowMax}°C` : 'Clear, 34°C')}
+                </div>
+                <div className="text-xs font-semibold text-emerald-400 bg-emerald-500/10 inline-block px-2 py-1 rounded mt-2 border border-emerald-500/20">
                   {weather && weather.tomorrowDesc.toLowerCase().includes('rain') 
-                    ? '+18% Delivery orders expected'
-                    : '+14% Cold beverage demand'}
+                    ? '🌧️ +18% Delivery orders expected'
+                    : '☀️ AI: +14% Shake demand tomorrow'}
                 </div>
               </div>
             </div>
@@ -106,7 +109,7 @@ export default function ForecastTab() {
           <div className="card p-5">
             <h4 className="text-xs text-slate-400 font-bold uppercase mb-3">Trending Dishes Tomorrow</h4>
             <div className="space-y-3">
-              {['Mango Lassi', 'Cold Coffee', 'Chicken Salad'].map((d,i) => (
+              {['Ferrero Rocher Shake', 'Classic Fries', 'Chicken Steak'].map((d,i) => (
                 <div key={d} className="flex justify-between items-center text-sm">
                   <span className="text-slate-300">{d}</span>
                   <span className="text-emerald-400 font-bold">+{30 - i*5}%</span>

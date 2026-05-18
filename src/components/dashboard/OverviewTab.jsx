@@ -78,8 +78,8 @@ export default function OverviewTab() {
         </h3>
         <p className="text-slate-300 leading-relaxed text-sm">
           Revenue is tracking 18% above your 30-day average, primarily driven by strong Combo Sales (+24%). 
-          Waste control algorithms successfully reduced biryani over-prep yesterday, saving ₹1,200. 
-          Expect a minor demand dip around 4PM today; recommend enabling dynamic pricing on beverages to maintain momentum.
+          Waste control algorithms successfully reduced burger bun over-prep yesterday, saving ₹1,200. 
+          Expect a minor demand dip around 4PM today; recommend enabling dynamic pricing on shakes to maintain momentum.
         </p>
       </motion.div>
     </div>

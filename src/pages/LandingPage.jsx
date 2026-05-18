@@ -19,10 +19,10 @@ export default function LandingPage({ onEnter }) {
         style={{ borderColor: 'var(--c-border)', background: 'rgba(4,12,7,0.85)', backdropFilter: 'blur(12px)' }}>
         <motion.div className="flex gap-12 whitespace-nowrap" animate={{ x: ['0%', '-50%'] }} transition={{ duration: 40, ease: 'linear', repeat: Infinity }}>
           {[...Array(2)].fill([
-            '🌡️ Lassi demand rising 62% tomorrow due to heat wave',
+            '🌡️ Shake demand rising 62% tomorrow due to heat wave',
             '🎓 Students prefer combo meals after 1PM — enable promo',
-            '📦 Onion stock critical — 14h remaining',
-            '🍛 Reduce biryani prep by 10% on Mondays',
+            '📦 Lettuce stock critical — 14h remaining',
+            '🍔 Reduce chicken fillet prep by 10% on Mondays',
             '💰 Dynamic pricing opportunity detected for dinner rush'
           ]).flat().map((t, i) => (
             <span key={i} className="text-[11px] font-medium text-emerald-400 flex items-center gap-2">

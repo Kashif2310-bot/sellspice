@@ -56,7 +56,7 @@ export default function Dashboard({ onBack, pushToast }) {
               <div className="dot-live" />
               <span className="text-[10px] uppercase tracking-wider font-bold text-emerald-400">Live Sync</span>
             </div>
-            <div className="text-sm font-semibold text-white">Spice Garden, Delhi</div>
+            <div className="text-sm font-semibold text-white">Truffles, 80 Ft Road, BLR</div>
           </div>
         </div>
 
@@ -93,7 +93,7 @@ export default function Dashboard({ onBack, pushToast }) {
           <div className="flex items-center gap-4">
             <div className="badge badge-green"><Zap size={12} /> Gemini Active</div>
             <div className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-xs font-bold text-slate-300 border border-slate-700">
-              SG
+              TR
             </div>
           </div>
         </header>
